@@ -54,7 +54,7 @@ reduccion_agua_pct = st.sidebar.slider(
     max_value=0.3,
     value=0.3,
     step=0.01,
-    format='.1%',
+    # format='.1%', # Eliminado para evitar SyntaxError
     help="Porcentaje de reducción en el consumo de agua por hectárea tratada."
 )
 
@@ -73,7 +73,7 @@ porcentaje_secundarias = st.sidebar.slider(
     max_value=0.9,
     value=0.85,
     step=0.01,
-    format='.1%',
+    # format='.1%', # Eliminado para evitar SyntaxError
     help="Porcentaje de materias primas secundarias utilizadas en la formulación del producto."
 )
 
@@ -260,7 +260,7 @@ plt.close(fig_ingresos)
 
 st.markdown("---")
 st.markdown("### Información Adicional:")
-st.markdown(f"- **Estado de Avance y Recomendaciones:** El proyecto se encuentra en fase piloto de validación técnica del producto humectante, con pruebas de formulación avanzadas y estudios de desempeño agronómico en curso. Se ha logrado articular una cadena de suministro con proveedores locales de descartes agroindustriales, asegurando la disponibilidad y trazabilidad del insumo base. Se están evaluando alianzas comerciales con empresas del sector agrícola y hortofrutícola para el escalamiento de la solución. Algunos indicadores ambientales y económicos aún requieren ajustes metodológicos y validación empírica.")
+st.markdown(f"- **Estado de Avance y Recomendaciones:** El proyecto se encuentra en fase piloto de validación técnica del producto humectante, con pruebas de formulación avanzadas y estudios de desempeño agronómico en curso. Se ha logrado estabilizar una versión funcional del agente humectante a partir de descartes de quillay, con propiedades fisicoquímicas adecuadas para su aplicación en suelos agrícolas. Asimismo, se ha iniciado la fase de ensayos de campo para validar la eficiencia hídrica y el comportamiento del producto en comparación con soluciones convencionales.\nDesde el punto de vista de la valorización de materias primas secundarias, se ha logrado articular una cadena de suministro con proveedores locales de descartes agroindustriales, asegurando la disponibilidad y trazabilidad del insumo base. También se están evaluando alianzas comerciales con empresas del sector agrícola y hortofrutícola para el escalamiento de la solución.\nEn cuanto a la documentación de impactos, se ha iniciado la recopilación de datos para aplicar metodologías cuantitativas en eficiencia hídrica y circularidad. No obstante, algunos indicadores ambientales y económicos aún requieren ajustes metodológicos y validación empírica, especialmente en lo relativo a ahorro de agua por hectárea y sustitución efectiva de productos sintéticos.")
 
 st.markdown("---")
 # Texto de atribución centrado
